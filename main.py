@@ -6,7 +6,6 @@ import json
 def salvarBase( base ):
 	try:
 		dumps = json.dumps(base)
-		#print( dumps )
 		saida = open("resultado.json", "w")
 		saida.write( dumps )
 		saida.close()
